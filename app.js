@@ -528,6 +528,7 @@ async function runMeeting(item) {
 
   state.stats.done++;
   LS.set(K.stats, state.stats);
+  updateKpis();
 
   // 기록 저장
   state.history.unshift({
